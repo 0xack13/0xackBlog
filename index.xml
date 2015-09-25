@@ -6,8 +6,26 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Sep 2015 22:58:34 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2015 23:15:32 +0300</lastBuildDate>
     <atom:link href="http://0xack13.github.io/0xackBlog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>about2</title>
+      <link>http://0xack13.github.io/0xackBlog/about2/</link>
+      <pubDate>Fri, 25 Sep 2015 23:15:32 +0300</pubDate>
+      
+      <guid>http://0xack13.github.io/0xackBlog/about2/</guid>
+      <description>&lt;p&gt;o&lt;/p&gt;
+
+&lt;p&gt;sddssd
+ds
+ds
+ds&lt;/p&gt;
+
+&lt;p&gt;ds
+sd&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>about</title>
@@ -15,7 +33,11 @@
       <pubDate>Fri, 25 Sep 2015 22:58:34 +0300</pubDate>
       
       <guid>http://0xack13.github.io/0xackBlog/about/</guid>
-      <description></description>
+      <description>&lt;p&gt;odssd
+sd
+ds
+ds&lt;/p&gt;
+</description>
     </item>
     
   </channel>
