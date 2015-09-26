@@ -78,30 +78,23 @@
 
     <p>A new cool feature introduced in C# 6.0 that enables writing one-liner methods.</p>
 
-<pre><code class="language-html">&lt;section id=&quot;main&quot;&gt;
-&lt;/section&gt;
-</code></pre>
+<pre><code class="language-CSharp">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-<pre><code class="language-go">package main            
-                        
-import (                
-        &quot;flag&quot;          
-        &quot;html/template&quot; 
-        &quot;io/ioutil&quot;     
-        &quot;log&quot;           
-        &quot;net/http&quot;      
-        &quot;regexp&quot;        
-        &quot;net&quot;           
-)                       
-...
-        http.ListenAndServe(&quot;:8080&quot;, nil)
-}                                        
-
-</code></pre>
-
-<pre><code class="language-CSharp">
-Console.WriteLine(&quot;test&quot;);
-
+namespace CSharp6Preview
+{
+    class Program
+    {
+        static void test() =&gt; Console.WriteLine(&quot;Welcome to my E&quot;);
+        static void Main(string[] args)
+        {
+            test();
+        }
+    }
+}
 </code></pre>
 
   </div>

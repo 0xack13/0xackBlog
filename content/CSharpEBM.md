@@ -6,34 +6,24 @@ title = "C# Expression Bodied-Members"
 +++
 A new cool feature introduced in C# 6.0 that enables writing one-liner methods. 
 
-```html
-<section id="main">
-</section>
-```
-
-```go
-package main            
-                        
-import (                
-        "flag"          
-        "html/template" 
-        "io/ioutil"     
-        "log"           
-        "net/http"      
-        "regexp"        
-        "net"           
-)                       
-...
-        http.ListenAndServe(":8080", nil)
-}                                        
-
-```
-
-
 ```CSharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-Console.WriteLine("test");
-
+namespace CSharp6Preview
+{
+    class Program
+    {
+        static void test() => Console.WriteLine("Welcome to my E");
+        static void Main(string[] args)
+        {
+            test();
+        }
+    }
+}
 ```
 
 
