@@ -27,10 +27,9 @@
       <guid>http://0xack13.github.io/0xackBlog/CSharpEBM/</guid>
       <description>&lt;p&gt;A new cool feature introduced in C# 6.0 that enables writing one-liner methods.&lt;/p&gt;
 
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;section&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;main&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;/section&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;section id=&amp;quot;main&amp;quot;&amp;gt;
+&amp;lt;/section&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main            
                         
@@ -49,9 +48,10 @@ import (
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;p&amp;gt;Console.WriteLine(&lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;“&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;test&lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;”&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;);&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&#34;language-CSharp&#34;&gt;
+Console.WriteLine(&amp;quot;test&amp;quot;);
 
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
