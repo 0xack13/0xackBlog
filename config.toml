@@ -1,4 +1,4 @@
 baseurl = "http://0xack13.github.io/0xackBlog/"
 languageCode = "en-us"
 title = "My New Hugo Site"
-theme = "herring-cove"
+theme = "hyde"

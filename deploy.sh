@@ -4,7 +4,7 @@ git subtree pull --prefix=public git@github.com:0xack13/0xackBlog.git gh-pages -
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
-hugo -t herring-cove
+hugo
 
 git add -A
 
