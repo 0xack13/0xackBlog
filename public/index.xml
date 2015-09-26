@@ -2,38 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>http://localhost:1313/0xackBlog/</link>
+    <link>http://0xack13.github.io/0xackBlog/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 25 Sep 2015 23:15:32 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/0xackBlog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://0xack13.github.io/0xackBlog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>about2</title>
-      <link>http://localhost:1313/0xackBlog/about2/</link>
+      <title>C# Expression Bodied-Members</title>
+      <link>http://0xack13.github.io/0xackBlog/CSharpEBM/</link>
       <pubDate>Fri, 25 Sep 2015 23:15:32 +0300</pubDate>
       
-      <guid>http://localhost:1313/0xackBlog/about2/</guid>
-      <description>&lt;p&gt;New Update!!
-o&lt;/p&gt;
-
-&lt;p&gt;sddssd
-ds
-ds
-ds&lt;/p&gt;
-
-&lt;p&gt;ds
-sd&lt;/p&gt;
+      <guid>http://0xack13.github.io/0xackBlog/CSharpEBM/</guid>
+      <description>&lt;p&gt;A new cool feature introduced in C# 6.0 that enables writing one-liner methods.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>about</title>
-      <link>http://localhost:1313/0xackBlog/about/</link>
+      <link>http://0xack13.github.io/0xackBlog/about/</link>
       <pubDate>Fri, 25 Sep 2015 22:58:34 +0300</pubDate>
       
-      <guid>http://localhost:1313/0xackBlog/about/</guid>
+      <guid>http://0xack13.github.io/0xackBlog/about/</guid>
       <description>&lt;p&gt;odssd
 sd
 ds
