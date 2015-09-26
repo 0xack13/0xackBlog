@@ -20,21 +20,12 @@
     </item>
     
     <item>
-      <title>about2</title>
-      <link>http://0xack13.github.io/0xackBlog/about2/</link>
+      <title>C# Expression Bodied-Members</title>
+      <link>http://0xack13.github.io/0xackBlog/CSharpEBM/</link>
       <pubDate>Fri, 25 Sep 2015 23:15:32 +0300</pubDate>
       
-      <guid>http://0xack13.github.io/0xackBlog/about2/</guid>
-      <description>&lt;p&gt;New Update!!
-o&lt;/p&gt;
-
-&lt;p&gt;sddssd
-ds
-ds
-ds&lt;/p&gt;
-
-&lt;p&gt;ds
-sd&lt;/p&gt;
+      <guid>http://0xack13.github.io/0xackBlog/CSharpEBM/</guid>
+      <description>&lt;p&gt;A new cool feature introduced in C# 6.0 that enables writing one-liner methods.&lt;/p&gt;
 </description>
     </item>
     
