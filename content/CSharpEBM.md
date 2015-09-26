@@ -11,7 +11,7 @@ A new cool feature introduced in C# 6.0 that enables writing one-liner methods.
 </section>
 {{% /highlight %}}
 
-{{% highlight go %}}    
+```go
 package main            
                         
 import (                
@@ -26,8 +26,8 @@ import (
 ...
         http.ListenAndServe(":8080", nil)
 }                                        
-{{% /highlight %}}
 
+```
 
 
 {{% highlight csharp %}}

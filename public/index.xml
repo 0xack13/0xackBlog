@@ -32,22 +32,22 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;package&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main            
+                        
+import (                
+        &amp;quot;flag&amp;quot;          
+        &amp;quot;html/template&amp;quot; 
+        &amp;quot;io/ioutil&amp;quot;     
+        &amp;quot;log&amp;quot;           
+        &amp;quot;net/http&amp;quot;      
+        &amp;quot;regexp&amp;quot;        
+        &amp;quot;net&amp;quot;           
+)                       
+...
+        http.ListenAndServe(&amp;quot;:8080&amp;quot;, nil)
+}                                        
 
-&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;br&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;“&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;flag&lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;”&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;br&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;“&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;template&lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;”&lt;/span&gt;
-        &lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;“&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;io&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;ioutil&lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;”&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;br&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;“&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;log&lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;”&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;br&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;“&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;net&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;http&lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;”&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;br&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;“&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;regexp&lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;”&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;br&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;“&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;net&lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;”&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;br&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;br&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;…&lt;/span&gt;
-        &lt;span style=&#34;color: #a6e22e&#34;&gt;http&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;ListenAndServe&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;”&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;8080&lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;”&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;nil&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
-&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;p&amp;gt;Console.WriteLine(&lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;“&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;test&lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;”&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;);&amp;lt;/p&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
