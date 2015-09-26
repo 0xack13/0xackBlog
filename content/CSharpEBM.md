@@ -5,3 +5,9 @@ title = "C# Expression Bodied-Members"
 
 +++
 A new cool feature introduced in C# 6.0 that enables writing one-liner methods. 
+
+{{< highlight html >}}
+<section id="main">
+</section>
+
+
