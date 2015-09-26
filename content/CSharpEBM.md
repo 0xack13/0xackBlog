@@ -10,4 +10,30 @@ A new cool feature introduced in C# 6.0 that enables writing one-liner methods.
 <section id="main">
 </section>
 
+{{% highlight go %}}    
+package main            
+                        
+import (                
+        "flag"          
+        "html/template" 
+        "io/ioutil"     
+        "log"           
+        "net/http"      
+        "regexp"        
+        "net"           
+)                       
+...
+        http.ListenAndServe(":8080", nil)
+}                                        
+{{% /highlight %}}
+
+
+
+{{% highlight csharp %}}
+
+Console.WriteLine("test");
+
+{{% /highlight %}}
+
+
 
