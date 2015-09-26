@@ -9,6 +9,7 @@ A new cool feature introduced in C# 6.0 that enables writing one-liner methods.
 {{< highlight html >}}
 <section id="main">
 </section>
+{{% /highlight %}}
 
 {{% highlight go %}}    
 package main            
