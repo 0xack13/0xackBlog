@@ -45,6 +45,29 @@ namespace CSharp6Preview
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As might seem, it&amp;rsquo;s no brainer to use the EBM as long as you understand using lambdas in C#. The beauty also is that you can pass parameters to the expression.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s another example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-CSharp&#34;&gt;using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSharp6Preview
+{
+    class Program
+    {
+        static void test() =&amp;gt; Console.WriteLine(&amp;quot;Welcome to my E&amp;quot;);
+        static void Main(string[] args)
+        {
+            test();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
