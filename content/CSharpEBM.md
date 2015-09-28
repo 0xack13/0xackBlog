@@ -32,15 +32,14 @@ However, if we take this up a notchm, we will find out that the EBM in lambda ex
 
 ```CSharp
 private static void EBM()
-		{
-			Console.WriteLine("Welcome to my EBM!");
-		}
+{
+	Console.WriteLine("Welcome to my EBM!");
+}
 
-		private static void EBMwithParam(string ebmVar)
-		{
-			Console.WriteLine(string.Format("Welcome to {0}", ebmVar));
-		}
+private static void EBMwithParam(string ebmVar)
+{
+	Console.WriteLine(string.Format("Welcome to {0}", ebmVar));
+}
 ```
 
-	So, this is purely a syntactic sugar feature in order to simplify code typing and wasn't merely intended for any other reason. Also, you might notice how the `$` was generated using `string.format` along with the variable we passed inline of the `WriteLine` method.
-
+So, this is purely a syntactic sugar feature in order to simplify code typing and wasn't merely intended for any other reason. Also, you might notice how the `$` was generated using `string.format` along with the variable we passed inline of the `WriteLine` method.
