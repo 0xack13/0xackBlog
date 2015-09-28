@@ -4,28 +4,7 @@ draft = false
 title = "C# Expression Bodied-Members"
 
 +++
-A new cool feature introduced in C# 6.0 that enables writing one-liner methods. 
-
-```CSharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp6Preview
-{
-    class Program
-    {
-        static void test() => Console.WriteLine("Welcome to my E");
-        static void Main(string[] args)
-        {
-            test();
-        }
-    }
-}
-```
-As might seem, it's no brainer to use the EBM as long as you understand using lambdas in C#. The beauty also is that you can pass parameters to the expression.
+A new cool feature introduced in C# 6.0 that enables writing one-liner methods. As it might seem, it's no brainer to use the EBM as long as you understand using lambdas in C#. The beauty also is that you can pass parameters to the expression.
 
 Here's another example:
 
@@ -40,13 +19,16 @@ namespace CSharp6Preview
 {
     class Program
     {
-        static void test() => Console.WriteLine("Welcome to my E");
-        static void Main(string[] args)
+	var ebmVar = "my EBM!";
+        static void EBM() => Console.WriteLine("Welcome to my EBM!");
+	static void EBMwithParam(var ebmVar) => Console.WriteLine($"Welcome to my {ebmVar}");
+	static void Main(string[] args)
         {
-            test();
+            EBM();
+	    EBMwithParam(ebmVar);
         }
     }
 }
 ```
-
+A side note is that the `$` in the provided string in `Console.WriteLine` is a way to format the string by passing variables to it.
 
