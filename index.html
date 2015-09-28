@@ -85,7 +85,22 @@ namespace CSharp6Preview
 }
 </code></pre>
 
-<p>A side note is that the <code>$</code> in the provided string in <code>Console.WriteLine</code> is a way to format the string by passing variables to it.</p>
+<p>A side note is that the <code>$</code> in the provided string in <code>Console.WriteLine</code> is a way to format the string by passing variables to it. Otherwise, the variable in the curly beackets will be considered as part of the same string.</p>
+
+<p>However, if we take this up a notchm, we will find out that the EBM in lambda expression was translated to a regular method with the curely braces.</p>
+
+<pre><code class="language-CSharp">private static void EBM()
+		{
+			Console.WriteLine(&quot;Welcome to my EBM!&quot;);
+		}
+
+		private static void EBMwithParam(string ebmVar)
+		{
+			Console.WriteLine(string.Format(&quot;Welcome to {0}&quot;, ebmVar));
+		}
+</code></pre>
+
+<p>So, this is purely a syntactic sugar feature in order to simply code typing.</p>
 
   </div>
   
