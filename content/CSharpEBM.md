@@ -5,7 +5,7 @@ title = "C# Expression Bodied-Members"
 tags = [ "Development", "C#", "6.0" ]
 categories = [ "Development" ]
 series = [ "C# 6.0 Features" ]
-slug = "C# 6.0"
+slug = "C-Sharp-6-Expression-Bodied-Members"
 
 +++
 A new cool feature introduced in C# 6.0 that enables writing one-liner methods. As it might seem, it's no brainer to use the EBM as long as you understand using lambdas in C#. The beauty also is that you can pass parameters to the expression.
