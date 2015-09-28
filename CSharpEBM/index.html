@@ -80,18 +80,17 @@ namespace CSharp6Preview
 <p>However, if we take this up a notchm, we will find out that the EBM in lambda expression was translated to a regular method with the curely braces.</p>
 
 <pre><code class="language-CSharp">private static void EBM()
-		{
-			Console.WriteLine(&quot;Welcome to my EBM!&quot;);
-		}
+{
+	Console.WriteLine(&quot;Welcome to my EBM!&quot;);
+}
 
-		private static void EBMwithParam(string ebmVar)
-		{
-			Console.WriteLine(string.Format(&quot;Welcome to {0}&quot;, ebmVar));
-		}
+private static void EBMwithParam(string ebmVar)
+{
+	Console.WriteLine(string.Format(&quot;Welcome to {0}&quot;, ebmVar));
+}
 </code></pre>
 
-<pre><code>So, this is purely a syntactic sugar feature in order to simplify code typing and wasn't merely intended for any other reason. Also, you might notice how the `$` was generated using `string.format` along with the variable we passed inline of the `WriteLine` method.
-</code></pre>
+<p>So, this is purely a syntactic sugar feature in order to simplify code typing and wasn&rsquo;t merely intended for any other reason. Also, you might notice how the <code>$</code> was generated using <code>string.format</code> along with the variable we passed inline of the <code>WriteLine</code> method.</p>
 
 			</div>
 

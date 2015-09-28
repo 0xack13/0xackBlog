@@ -42,18 +42,17 @@ namespace CSharp6Preview
 &lt;p&gt;However, if we take this up a notchm, we will find out that the EBM in lambda expression was translated to a regular method with the curely braces.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-CSharp&#34;&gt;private static void EBM()
-		{
-			Console.WriteLine(&amp;quot;Welcome to my EBM!&amp;quot;);
-		}
+{
+	Console.WriteLine(&amp;quot;Welcome to my EBM!&amp;quot;);
+}
 
-		private static void EBMwithParam(string ebmVar)
-		{
-			Console.WriteLine(string.Format(&amp;quot;Welcome to {0}&amp;quot;, ebmVar));
-		}
+private static void EBMwithParam(string ebmVar)
+{
+	Console.WriteLine(string.Format(&amp;quot;Welcome to {0}&amp;quot;, ebmVar));
+}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code&gt;So, this is purely a syntactic sugar feature in order to simplify code typing and wasn&#39;t merely intended for any other reason. Also, you might notice how the `$` was generated using `string.format` along with the variable we passed inline of the `WriteLine` method.
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So, this is purely a syntactic sugar feature in order to simplify code typing and wasn&amp;rsquo;t merely intended for any other reason. Also, you might notice how the &lt;code&gt;$&lt;/code&gt; was generated using &lt;code&gt;string.format&lt;/code&gt; along with the variable we passed inline of the &lt;code&gt;WriteLine&lt;/code&gt; method.&lt;/p&gt;
 </description>
     </item>
     
