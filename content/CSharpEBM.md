@@ -42,5 +42,5 @@ private static void EBM()
 		}
 ```
 
-So, this is purely a syntactic sugar feature in order to simply code typing. 
+	So, this is purely a syntactic sugar feature in order to simplify code typing and wasn't merely intended for any other reason. Also, you might notice how the `$` was generated using `string.format` along with the variable we passed inline of the `WriteLine` method.
 

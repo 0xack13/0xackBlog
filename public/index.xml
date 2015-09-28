@@ -52,7 +52,8 @@ namespace CSharp6Preview
 		}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;So, this is purely a syntactic sugar feature in order to simply code typing.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;So, this is purely a syntactic sugar feature in order to simplify code typing and wasn&#39;t merely intended for any other reason. Also, you might notice how the `$` was generated using `string.format` along with the variable we passed inline of the `WriteLine` method.
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
