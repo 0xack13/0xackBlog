@@ -77,7 +77,7 @@ namespace CSharp6Preview
 
 <p>A side note is that the <code>$</code> in the provided string in <code>Console.WriteLine</code> is a way to format the string by passing variables to it. Otherwise, the variable in the curly beackets will be considered as part of the same string.</p>
 
-<p>However, if we take this up a notchm, we will find out that the EBM in lambda expression was translated to a regular method with the curely braces.</p>
+<p>However, if we take this up a notch, we will find out that the EBM in lambda expression was translated to a regular method with the curely braces.</p>
 
 <pre><code class="language-CSharp">private static void EBM()
 {
@@ -90,7 +90,7 @@ private static void EBMwithParam(string ebmVar)
 }
 </code></pre>
 
-<p>So, this is purely a syntactic sugar feature in order to simplify code typing and wasn&rsquo;t merely intended for any other reason. Also, you might notice how the <code>$</code> was generated using <code>string.format</code> along with the variable we passed inline of the <code>WriteLine</code> method.</p>
+<p>So, this is purely a syntactic sugar feature in order to simplify code typing and wasn&rsquo;t merely intended for any other reason. Also, you might notice how the <code>$</code> was generated using <code>string.format</code> along with the variable which we passed inline the <code>WriteLine</code> method.</p>
 
 			</div>
 
