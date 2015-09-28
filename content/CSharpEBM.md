@@ -28,7 +28,7 @@ namespace CSharp6Preview
 ```
 A side note is that the `$` in the provided string in `Console.WriteLine` is a way to format the string by passing variables to it. Otherwise, the variable in the curly beackets will be considered as part of the same string.
 
-However, if we take this up a notchm, we will find out that the EBM in lambda expression was translated to a regular method with the curely braces.
+However, if we take this up a notch, we will find out that the EBM in lambda expression was translated to a regular method with the curely braces.
 
 ```CSharp
 private static void EBM()
@@ -42,4 +42,4 @@ private static void EBMwithParam(string ebmVar)
 }
 ```
 
-So, this is purely a syntactic sugar feature in order to simplify code typing and wasn't merely intended for any other reason. Also, you might notice how the `$` was generated using `string.format` along with the variable we passed inline of the `WriteLine` method.
+So, this is purely a syntactic sugar feature in order to simplify code typing and wasn't merely intended for any other reason. Also, you might notice how the `$` was generated using `string.format` along with the variable which we passed inline the `WriteLine` method.

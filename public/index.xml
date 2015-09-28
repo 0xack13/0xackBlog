@@ -39,7 +39,7 @@ namespace CSharp6Preview
 
 &lt;p&gt;A side note is that the &lt;code&gt;$&lt;/code&gt; in the provided string in &lt;code&gt;Console.WriteLine&lt;/code&gt; is a way to format the string by passing variables to it. Otherwise, the variable in the curly beackets will be considered as part of the same string.&lt;/p&gt;
 
-&lt;p&gt;However, if we take this up a notchm, we will find out that the EBM in lambda expression was translated to a regular method with the curely braces.&lt;/p&gt;
+&lt;p&gt;However, if we take this up a notch, we will find out that the EBM in lambda expression was translated to a regular method with the curely braces.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-CSharp&#34;&gt;private static void EBM()
 {
@@ -52,7 +52,7 @@ private static void EBMwithParam(string ebmVar)
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;So, this is purely a syntactic sugar feature in order to simplify code typing and wasn&amp;rsquo;t merely intended for any other reason. Also, you might notice how the &lt;code&gt;$&lt;/code&gt; was generated using &lt;code&gt;string.format&lt;/code&gt; along with the variable we passed inline of the &lt;code&gt;WriteLine&lt;/code&gt; method.&lt;/p&gt;
+&lt;p&gt;So, this is purely a syntactic sugar feature in order to simplify code typing and wasn&amp;rsquo;t merely intended for any other reason. Also, you might notice how the &lt;code&gt;$&lt;/code&gt; was generated using &lt;code&gt;string.format&lt;/code&gt; along with the variable which we passed inline the &lt;code&gt;WriteLine&lt;/code&gt; method.&lt;/p&gt;
 </description>
     </item>
     
