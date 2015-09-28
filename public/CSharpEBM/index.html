@@ -58,23 +58,19 @@
 <p>Here&rsquo;s another example:</p>
 
 <pre><code class="language-CSharp">using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharp6Preview
 {
     class Program
     {
-	var ebmVar = &quot;my EBM!&quot;;
-        static void EBM() =&gt; Console.WriteLine(&quot;Welcome to my EBM!&quot;);
-	static void EBMwithParam(var ebmVar) =&gt; Console.WriteLine($&quot;Welcome to my {ebmVar}&quot;);
-	static void Main(string[] args)
-        {
-            EBM();
-	    EBMwithParam(ebmVar);
-        }
+        static string ebmVar = &quot;my EBM!&quot;;                                                              
+        static void EBM() =&gt; Console.WriteLine(&quot;Welcome to my EBM!&quot;);                        
+        static void EBMwithParam(string ebmVar) =&gt; Console.WriteLine($&quot;Welcome to {ebmVar}&quot;);
+        static void Main(string[] args)                                                     
+        {                                                                                    
+            EBM();                                                                           
+            EBMwithParam(ebmVar);                                                                 
+        }             
     }
 }
 </code></pre>

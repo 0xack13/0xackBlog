@@ -10,23 +10,19 @@ Here's another example:
 
 ```CSharp
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharp6Preview
 {
     class Program
     {
-	var ebmVar = "my EBM!";
-        static void EBM() => Console.WriteLine("Welcome to my EBM!");
-	static void EBMwithParam(var ebmVar) => Console.WriteLine($"Welcome to my {ebmVar}");
-	static void Main(string[] args)
-        {
-            EBM();
-	    EBMwithParam(ebmVar);
-        }
+        static string ebmVar = "my EBM!";                                                              
+        static void EBM() => Console.WriteLine("Welcome to my EBM!");                        
+        static void EBMwithParam(string ebmVar) => Console.WriteLine($"Welcome to {ebmVar}");
+        static void Main(string[] args)                                                     
+        {                                                                                    
+            EBM();                                                                           
+            EBMwithParam(ebmVar);                                                                 
+        }             
     }
 }
 ```

@@ -56,19 +56,6 @@
       
   <div class="post">
     <h1 class="post-title">
-      <a href="http://0xack13.github.io/0xackBlog/about3/">
-        about3
-      </a>
-    </h1>
-
-    <span class="post-date">Fri, Sep 25, 2015</span>
-
-    <p><code>New Trend</code></p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
       <a href="http://0xack13.github.io/0xackBlog/CSharpEBM/">
         C# Expression Bodied-Members
       </a>
@@ -81,44 +68,24 @@
 <p>Here&rsquo;s another example:</p>
 
 <pre><code class="language-CSharp">using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharp6Preview
 {
     class Program
     {
-	var ebmVar = &quot;my EBM!&quot;;
-        static void EBM() =&gt; Console.WriteLine(&quot;Welcome to my EBM!&quot;);
-	static void EBMwithParam(var ebmVar) =&gt; Console.WriteLine($&quot;Welcome to my {ebmVar}&quot;);
-	static void Main(string[] args)
-        {
-            EBM();
-	    EBMwithParam(ebmVar);
-        }
+        static string ebmVar = &quot;my EBM!&quot;;                                                              
+        static void EBM() =&gt; Console.WriteLine(&quot;Welcome to my EBM!&quot;);                        
+        static void EBMwithParam(string ebmVar) =&gt; Console.WriteLine($&quot;Welcome to {ebmVar}&quot;);
+        static void Main(string[] args)                                                     
+        {                                                                                    
+            EBM();                                                                           
+            EBMwithParam(ebmVar);                                                                 
+        }             
     }
 }
 </code></pre>
 
 <p>A side note is that the <code>$</code> in the provided string in <code>Console.WriteLine</code> is a way to format the string by passing variables to it.</p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="http://0xack13.github.io/0xackBlog/about/">
-        about
-      </a>
-    </h1>
-
-    <span class="post-date">Fri, Sep 25, 2015</span>
-
-    <p>odssd
-sd
-ds
-ds</p>
 
   </div>
   
