@@ -6,3 +6,8 @@ theme = "hyde"
 [params]
   description = "Saleh's Awesome Hugo Site"
   author = "Saleh Albatati"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"

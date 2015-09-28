@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C# 6.0 Features on My New Hugo Site</title>
+    <link>http://0xack13.github.io/0xackBlog/series/c/</link>
+    <description>Recent content in C# 6.0 Features on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Sep 2015 23:15:32 +0300</lastBuildDate>
+    <atom:link href="http://0xack13.github.io/0xackBlog/series/c" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>C# Expression Bodied-Members</title>
+      <link>http://0xack13.github.io/0xackBlog/C/</link>
+      <pubDate>Fri, 25 Sep 2015 23:15:32 +0300</pubDate>
+      
+      <guid>http://0xack13.github.io/0xackBlog/C/</guid>
+      <description>&lt;p&gt;A new cool feature introduced in C# 6.0 that enables writing one-liner methods. As it might seem, it&amp;rsquo;s no brainer to use the EBM as long as you understand using lambdas in C#. The beauty also is that you can pass parameters to the expression.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s a simple example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-CSharp&#34;&gt;using System;
+
+namespace CSharp6Preview
+{
+    class Program
+    {
+        static string ebmVar = &amp;quot;my EBM!&amp;quot;;                                                              
+        static void EBM() =&amp;gt; Console.WriteLine(&amp;quot;Welcome to my EBM!&amp;quot;);                        
+        static void EBMwithParam(string ebmVar) =&amp;gt; Console.WriteLine($&amp;quot;Welcome to {ebmVar}&amp;quot;);
+        static void Main(string[] args)                                                     
+        {                                                                                    
+            EBM();                                                                           
+            EBMwithParam(ebmVar);                                                                 
+        }             
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A side note is that the &lt;code&gt;$&lt;/code&gt; in the provided string in &lt;code&gt;Console.WriteLine&lt;/code&gt; is a way to format the string by passing variables to it. Otherwise, the variable in the curly beackets will be considered as part of the same string.&lt;/p&gt;
+
+&lt;p&gt;However, if we take this up a notch, we will find out that the EBM in lambda expression was translated to a regular method with the curely braces.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-CSharp&#34;&gt;private static void EBM()
+{
+	Console.WriteLine(&amp;quot;Welcome to my EBM!&amp;quot;);
+}
+
+private static void EBMwithParam(string ebmVar)
+{
+	Console.WriteLine(string.Format(&amp;quot;Welcome to {0}&amp;quot;, ebmVar));
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So, this is purely a syntactic sugar feature in order to simplify code typing and wasn&amp;rsquo;t merely intended for any other reason. Also, you might notice how the &lt;code&gt;$&lt;/code&gt; was generated using &lt;code&gt;string.format&lt;/code&gt; along with the variable which we passed inline the &lt;code&gt;WriteLine&lt;/code&gt; method.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
