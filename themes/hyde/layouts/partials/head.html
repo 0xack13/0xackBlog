@@ -28,3 +28,9 @@
   <!-- RSS -->
   <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 </head>
+
+<ul id="tags">
+  {{ range .Params.tags }}
+    <li><a href="tags/{{ . | urlize }}">{{ . }}</a> </li>
+  {{ end }}
+</ul>
