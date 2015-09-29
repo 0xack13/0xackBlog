@@ -4,11 +4,11 @@ title = "My New Hugo Site"
 theme = "hyde"
 canonifyurls = true
 
-[params]
-  description = "Saleh's Awesome Hugo Site"
-  author = "Saleh Albatati"
-
 [taxonomies]
   tag = "tags"
   category = "categories"
   series = "series"
+
+[params]
+  description = "Saleh's Awesome Hugo Site"
+  author = "Saleh Albatati"
