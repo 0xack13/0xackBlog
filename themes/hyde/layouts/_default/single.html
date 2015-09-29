@@ -5,6 +5,12 @@
 		<div class="content container">
 			<div class="post">
 			 	<h1>{{ .Title }}</h1>
+			<ul id="tags">
+  				{{ range .Params.tags }}
+    				<li><a href="tags/{{ . | urlize }}">{{ . }}</a> </li>
+  				{{ end }}
+			</ul>
+
 			  <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
 			      {{ .Content }}
 			</div>
